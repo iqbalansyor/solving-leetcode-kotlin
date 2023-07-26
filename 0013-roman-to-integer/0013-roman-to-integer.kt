@@ -18,10 +18,7 @@ class Solution {
                 var nextChar = getElementOf(stringCharArray, index + 1)
                 var prevChar = getElementOf(stringCharArray, index - 1)
                 
-                println("sini")
                 if (!isLower(prevChar, currentChar) || index == 0) {
-                    
-                    println("sini 2")
                     
                     if (isGreater(currentChar, nextChar) || (currentChar == nextChar)) {
                         result += hashMapNew[currentChar.toString()] ?: 0
